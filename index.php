@@ -1,0 +1,20 @@
+<?php get_header() ; ?>
+<div class="container">
+    <section class="site-content">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <a href=<?php the_permalink();?>>
+            <article>
+                <?php if ( has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail(); ?>
+                <?php endif; ?>
+                <div class="post_content">
+                    <h1><?php the_title();?></h1>
+                    <?php the_excerpt(); ?>
+                </div>
+            </article>
+        </a>
+        <?php endwhile; endif; ?>
+    </section>
+    <?php get_sidebar(); ?>
+</div>
+<?php get_footer() ; ?>
