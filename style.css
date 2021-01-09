@@ -1,6 +1,7 @@
 /*
-  Theme Name: Kiwi Skin
+  Theme Name: KiwiSkin
   Author: Kiwi
+  Description: Simple blog theme
   Version: 0.2
 */
 body {
@@ -20,8 +21,8 @@ header {
 }
 a, a:visited, a:hover {text-decoration: none; color: rgba(39,48,57,.8);}
 header a, header a:visited, header a:hover {color: #ffffff;}
-article a, article a:visited  {color: #9ce159;}
-article a:hover {color: #8c5e29;}
+article a, article a:visited, .site-footer a, .site-footer a:visited {color: #9ce159;}
+article a:hover, .site-footer a:hover {color: #8c5e29;}
 
 .container {
 	margin: auto;
@@ -116,16 +117,28 @@ footer {
 	font-size: 80%;
 	margin: 8px 0;
 }
-
+blockquote:before {
+	content: "\201C";
+	font-size: 3em;
+	font-family: Georgia;
+	color: #bcbcbc;
+	float: left;
+	margin: -5px 10px 0px -10px;
+}
+cite {
+	display: block;
+	text-align: right;
+}
+figcaption {
+	text-align: center;
+}
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #303030;
+		color: #dddddd;
 	}
 	h1, h2, h3, h4, h5, h6, a, a:visited, a:hover, footer {
 		color: #ffffff;
-	}
-	p, li {
-		color: #dddddd;
 	}
 	article, .site-sidebar, .nav-links a, footer {
 		background-color: #202020;
