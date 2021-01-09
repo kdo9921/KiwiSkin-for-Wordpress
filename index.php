@@ -9,11 +9,12 @@
                 <?php endif; ?>
                 <div class="post_content">
                     <h1><?php the_title();?></h1>
-                    <?php the_excerpt(); ?>
+                    <p><?php echo get_the_excerpt();?></p>
                 </div>
             </article>
         </a>
         <?php endwhile; endif; ?>
+        <?php the_posts_navigation() ?>
     </section>
     <?php get_sidebar(); ?>
 </div>
