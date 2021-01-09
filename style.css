@@ -40,7 +40,7 @@ article a:hover, .site-footer a:hover {color: #8c5e29;}
 article {
 	margin: 16px min(3vw, 16px) 32px;
 }
-.content-wrap {padding: min(0.24vw, 24px);}
+.content-wrap {padding: min(3vw, 24px);}
 article img {
 	width: 100%;
 	height: auto;
