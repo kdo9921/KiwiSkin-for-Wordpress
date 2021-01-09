@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+    <meta name='viewport' content='initial-scale=1, maximum-scale=1.0, user-scalable=no" viewport-fit=cover'>
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
