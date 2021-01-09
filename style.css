@@ -27,7 +27,7 @@ article a:hover, .site-footer a:hover {color: #8c5e29;}
 .container {
 	margin: auto;
 	margin-top: 16px;
-	width: 90%;
+	width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
 	max-width: 1200px;
 }
 @media (min-width : 990px) {
@@ -38,9 +38,9 @@ article a:hover, .site-footer a:hover {color: #8c5e29;}
 }
 
 article {
-	margin: 16px 16px 32px;
+	margin: 16px min(3vw, 16px) 32px;
 }
-.content-wrap {padding: 24px;}
+.content-wrap {padding: min(0.24vw, 24px);}
 article img {
 	width: 100%;
 	height: auto;
@@ -53,11 +53,11 @@ article h1 {
 	margin-top: 4px;
 }
 .post_content {
-	padding: 24px;
+	padding: min(3vw, 24px);
 }
 .site-sidebar {
-	margin: 16px;
-	padding: 24px;
+	margin: 16px min(3vw, 16px);
+	padding: min(3vw, 24px);
 }
 .site-sidebar ul {
 	font-size: 1.2rem;
@@ -88,7 +88,7 @@ article h1 {
 }
 .posts-navigation h2 {display:none;}
 .nav-links a {
-	padding: 16px 24px;
+	padding: 16px min(3vw, 24px);
 	font-weight: bold;
 }
 
