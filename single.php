@@ -8,7 +8,7 @@
 				<p class="post_info">작성일자 <?php the_time('Y'); ?>년 <?php the_time('m'); ?>월 
 				<?php the_time('d'); ?>일 / 작성자 <?php the_author() ; ?></p>
 				<?php the_content(); ?>
-				<hr>
+				
 				<?php comments_template(); ?>
 			</div>
 		</article>
