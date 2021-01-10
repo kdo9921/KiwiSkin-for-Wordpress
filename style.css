@@ -28,7 +28,7 @@ article a:hover, .site-footer a:hover {color: #8c5e29;}
 	margin: auto;
 	margin-top: 16px;
 	width: calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right));
-	max-width: 1200px;
+	max-width: 1024px;
 }
 @media (min-width : 990px) {
 	.container {
