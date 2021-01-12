@@ -38,6 +38,8 @@ article a:hover, .site-footer a:hover {color: #8c5e29;}
 }
 section {
 	margin: auto;
+	margin-top: 0;
+	width: 100%;
 }
 article {
 	margin: 16px min(4vw, 16px) 32px;
