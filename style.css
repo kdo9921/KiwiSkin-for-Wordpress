@@ -43,7 +43,6 @@ section {
 }
 article {
 	margin: 16px min(4vw, 16px) 32px;
-	max-width: 768px;
 }
 .content-wrap {padding: min(4vw, 24px);}
 article img {
