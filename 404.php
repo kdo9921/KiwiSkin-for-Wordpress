@@ -2,20 +2,32 @@
 <div class="container">
     <section class="site-content">
         <article>
-            <div class="content-wrap">
+            <div class="post_content">
                 <h1>404 Not Found</h1>
                 <p>앗! 페이지를 찾을 수 없네요.</p>
-                <?php the_content(); ?>
-                <hr>
-                <h2>최근 글</h2>
-                <ul>
-                    <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
-                    <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-                    <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
-                    <?php endwhile; wp_reset_postdata(); ?>
-                </ul>
+                <form role="search" method="get" id="searchform" class="searchform"
+                    action="<?php bloginfo( 'url' ); ?>">
+                    <input class="search-field" type="text" placeholder="검색 …" value="" name="s" id="s">
+                </form>
+            </div>
+
+        </article>
+        <article>
+            <div class="post_content">
+                <h1>최근 글</h1>
             </div>
         </article>
+        <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+        <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+        <a href="<?php the_permalink() ?>">
+            <article>
+                <div class="post_content">
+                    <h1><?php the_title();?></h1>
+                    <p><?php echo get_the_excerpt();?></p>
+                </div>
+            </article>
+        </a>
+        <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <?php get_sidebar('main-sidebar'); ?>
 </div>
