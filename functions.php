@@ -13,4 +13,26 @@ function new_excerpt_more($more) {
  return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+function getBrowser() {
+    $broswerList = array('MSIE', 'Chrome', 'Firefox', 'iPhone', 'iPad', 'Android', 'PPC', 'Safari', 'Trident', 'none');
+    $browserName = 'none';
+    
+    foreach ($broswerList as $userBrowser){
+        if($userBrowser === 'none') break;
+        if(strpos($_SERVER['HTTP_USER_AGENT'], $userBrowser)) {
+            $browserName = $userBrowser;
+            break;
+        }
+    }
+    return $browserName;
+}
+ 
+function isIE() {
+    $BrowserName = getBrowser();
+    if($BrowserName === 'MSIE'||$BrowserName === 'Trident'){
+        echo("<script>alert('현재 사용하시는 브라우저를 지원하지 않습니다. \\n웹 표준을 준수하는 최신 브라우저를 이용해보세요.');</script>"); 
+    }
+}
+
 ?>

@@ -8,6 +8,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <?php wp_head() ; ?>
+    <?php isIE(); ?>
 </head>
 
 <body <?php body_class(); ?>>
