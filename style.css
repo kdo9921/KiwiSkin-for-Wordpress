@@ -23,6 +23,9 @@ a, a:visited, a:hover {text-decoration: none; color: rgba(39,48,57,.8);}
 header a, header a:visited, header a:hover {color: #ffffff;}
 article a, article a:visited, .site-footer a, .site-footer a:visited {color: #9ce159;}
 article a:hover, .site-footer a:hover {color: #8c5e29;}
+strong {
+	color: #000000;
+}
 
 .container {
 	margin: auto;
@@ -155,5 +158,8 @@ figcaption {
 	.search-field {
 		background: #303030;
 		color: #cecece;
+	}
+	strong {
+		color: #ffffff;
 	}
 }
