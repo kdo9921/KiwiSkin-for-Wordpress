@@ -112,7 +112,7 @@ td {
 	padding: 4px;
 }
 
-figure {
+figure, figcaption {
 	margin: 16px;
 }
 
