@@ -4,7 +4,12 @@
   Description: Simple blog theme
   Version: 0.2
 */
+
+html {
+	min-height: 100vh;
+}
 body {
+	min-height: 100vh;
 	margin: 0;
 	background-color: #f3f4f6;
 	color: rgba(39, 48, 57, .8);
@@ -23,7 +28,39 @@ header {
 	background: linear-gradient(120deg, #9ce159, #8c5e29);
 	font-size: 150%;
 }
-
+#hamberger {
+	right: 16px;
+}
+.hamberger_container {
+	padding: 11px 16px;
+	height: 100%;
+    text-align: right;
+	font-size: 1.5rem;
+	display: block;
+}
+.menu  {
+	display: none;
+	padding: 16px;
+}
+.menuActive {
+	display: block;
+}
+.header_menu {
+	background-color: #ffffff;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.header_menu ul {
+	margin: 0;
+	list-style: none;
+}
+.header_menu li {
+	margin: 4px;
+	padding: 4px;
+}
+.header_menu li:hover {
+	background: rgba(128,128,128,0.1);
+	border-radius: 4px;
+}
 a,
 a:visited,
 a:hover {
@@ -62,8 +99,31 @@ strong {
 }
 
 @media (min-width : 990px) {
+	.header_menu li {
+		margin: 0;
+		padding: 0;
+	}
+	.header_menu li:hover {
+		background: none;
+		border: none;
+	}
 	.container {
 		grid-template-columns: 2fr 1fr;
+	}
+	.hamberger_container {
+		display: none;
+	}
+	.menu {
+		display: block;
+	}
+	.header_menu li {
+		display: inline;
+	}
+	.header_menu li:after{
+		content: " / ";
+	}
+	.header_menu li:last-child::after {
+		content: "";
 	}
 }
 
@@ -112,7 +172,8 @@ td {
 	padding: 4px;
 }
 
-figure, figcaption {
+figure,
+figcaption {
 	margin: 16px;
 }
 
@@ -171,6 +232,9 @@ article,
 }
 
 footer {
+    position: relative;
+	bottom: 0;
+	width: 100%;
 	margin-top: 32px;
 	background-color: #ffffff;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -214,40 +278,4 @@ cite {
 
 figcaption {
 	text-align: center;
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #303030;
-		color: #dddddd;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	a,
-	a:visited,
-	a:hover,
-	footer {
-		color: #ffffff;
-	}
-
-	article,
-	.site-sidebar,
-	.nav-links a,
-	footer {
-		background-color: #202020;
-	}
-
-	.search-field {
-		background: #303030;
-		color: #cecece;
-	}
-
-	strong {
-		color: #ffffff;
-	}
 }

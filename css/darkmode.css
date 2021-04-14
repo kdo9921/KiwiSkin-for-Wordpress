@@ -1,0 +1,37 @@
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #303030;
+		color: #dddddd;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a,
+	a:visited,
+	a:hover,
+	footer {
+		color: #ffffff;
+	}
+
+	article,
+	.site-sidebar,
+	.nav-links a,
+	footer,
+	.header_menu {
+		background-color: #202020;
+	}
+
+	.search-field {
+		background: #303030;
+		color: #cecece;
+	}
+
+	strong {
+		color: #ffffff;
+	}
+
+}
