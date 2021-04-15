@@ -2,7 +2,7 @@
   Theme Name: KiwiSkin
   Author: Kiwi
   Description: Simple blog theme
-  Version: 0.2
+  Version: 0.3
 */
 
 html {
@@ -25,7 +25,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(120deg, #9ce159, #8c5e29);
 	font-size: 150%;
 }
 #hamberger {
@@ -74,17 +73,6 @@ header a:hover {
 	color: #ffffff;
 }
 
-article a,
-article a:visited,
-.site-footer a,
-.site-footer a:visited {
-	color: #9ce159;
-}
-
-article a:hover,
-.site-footer a:hover {
-	color: #8c5e29;
-}
 
 strong {
 	color: #000000;
@@ -193,7 +181,6 @@ figcaption {
 
 .widget_title {
 	display: inline-block;
-	border-bottom: 2px solid #9ce159;
 	margin-bottom: 0;
 	padding-bottom: 8px;
 }
