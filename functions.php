@@ -95,6 +95,10 @@ function mytheme_customize_css()
     </style>
     <?php
 }
-add_action( 'wp_head', 'mytheme_customize_css');
 
+add_action( 'wp_head', 'mytheme_customize_css');
+function l10n_setup() {
+    load_theme_textdomain( 'KiwiSkin', get_template_directory() . '/lang' );
+}
+add_action( 'after_setup_theme', 'l10n_setup' );
 ?>

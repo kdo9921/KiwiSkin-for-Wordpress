@@ -3,8 +3,8 @@
     <section class="site-content">
         <article>
             <div class="post_content">
-                <h1>404 Not Found</h1>
-                <p>앗! 페이지를 찾을 수 없네요.</p>
+                <h1><?php _e( '404 Not Found', 'KiwiSkin' ); ?></h1>
+                <p><?php _e( 'Oops! That page can’t be found.', 'KiwiSkin' ); ?></p>
                 <form role="search" method="get" id="searchform" class="searchform"
                     action="<?php bloginfo( 'url' ); ?>">
                     <input class="search-field" type="text" placeholder="검색 …" value="" name="s" id="s">
@@ -14,7 +14,7 @@
         </article>
         <article>
             <div class="post_content">
-                <h1>최근 글</h1>
+                <h1><?php _e( 'Recent Post', 'KiwiSkin' ); ?></h1>
             </div>
         </article>
         <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>

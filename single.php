@@ -5,8 +5,7 @@
 		<article>
 			<div class="content-wrap">
 				<h1 class="post_info_title"><?php the_title();?></h1>
-				<p class="post_info">작성일자 <?php the_time('Y'); ?>년 <?php the_time('m'); ?>월 
-				<?php the_time('d'); ?>일 / 작성자 <?php the_author() ; ?></p>
+				<p class="post_info"><?php echo date_i18n(get_option('date_format'), false, false); ?> - <?php the_author() ; ?></p>
 				<?php the_content(); ?>
 				
 				<?php comments_template(); ?>

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Package Name\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-16 04:48+0900\n"
+"PO-Revision-Date: 2021-04-16 04:53+0900\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Language: ko_KR\n"
+
+#: 404.php:6
+msgid "404 Not Found"
+msgstr "404 Not Found"
+
+#: 404.php:7
+msgid "Oops! That page can’t be found."
+msgstr "앗! 페이지를 찾을 수 없네요."
+
+#: 404.php:17
+msgid "Recent Post"
+msgstr "최근 글"
+
+#: archive.php:26 search.php:22
+msgid "Nothing Found"
+msgstr "찾을 수 없습니다"
+
+#: archive.php:28 search.php:23
+msgid "Nothing Found Try Again"
+msgstr "검색어와 일치하는 것이 없습니다. 다른 검색어로 다시 시도해보세요."
+
+#: archive.php:30 search.php:6
+msgid "Search Result"
+msgstr "결색 결과"
+
+#: comments.php:16
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:30
+#, php-format
+msgid "One response to %s"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgid "%1$s response to %2$s"
+msgid_plural "%1$s responses to %2$s"
+msgstr[0] ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:60
+msgid "Main Color"
+msgstr "주 색사"
+
+#: functions.php:64
+msgid "Sub Color"
+msgstr "보조 색사"
+
+#: functions.php:68
+msgid "Header Color 1"
+msgstr "헤더 색상 1"
+
+#: functions.php:72
+msgid "Header Color 2"
+msgstr "해더 색상 2"
+
+#: sidebar.php:4
+msgid "Search"
+msgstr "검색"

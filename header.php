@@ -16,7 +16,7 @@
 
     <header class="site-header">
         <a href="/">
-            <h1><?php bloginfo('name') ?><h1>
+            <h1><?php bloginfo('name') ?></h1>
         </a>
     </header>
     <?php if (has_nav_menu( 'menu1' )) : ?>
