@@ -90,6 +90,7 @@ strong {
 	.header_menu li {
 		margin: 0;
 		padding: 0;
+		display: inline-block;
 	}
 	.header_menu li:hover {
 		background: none;
@@ -104,11 +105,10 @@ strong {
 	.menu {
 		display: block;
 	}
-	.header_menu li {
-		display: inline;
-	}
+
 	.header_menu li:after{
 		content: " / ";
+		margin: 0 8px;
 	}
 	.header_menu li:last-child::after {
 		content: "";
