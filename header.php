@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/darkmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php wp_head() ; ?>
-    <?php isIE(); ?>
 </head>
 
 <body <?php body_class(); ?>>

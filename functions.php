@@ -27,13 +27,7 @@ function getBrowser() {
     }
     return $browserName;
 }
- 
-function isIE() {
-    $BrowserName = getBrowser();
-    if($BrowserName === 'MSIE'||$BrowserName === 'Trident'){
-        echo("<script>alert('현재 사용하시는 브라우저를 지원하지 않습니다. \\n웹 표준을 준수하는 최신 브라우저를 이용해보세요.');</script>"); 
-    }
-}
+
 function triki_register_menus() {
     register_nav_menus(
         array(
