@@ -5,7 +5,7 @@
         <article>
             <div class="content-wrap">
                 <h1 class="post_info_title"><?php the_title();?></h1>
-                <p class="post_info"><?php echo date_i18n(get_option('date_format'), false, false); ?> - <?php the_author() ; ?></p>
+                <p class="post_info"><?php echo get_the_date(); ?> - <?php the_author() ; ?></p>
                 <?php the_content(); ?>
             </div>
         </article>
