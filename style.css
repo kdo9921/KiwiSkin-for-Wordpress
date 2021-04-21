@@ -31,6 +31,7 @@ header {
 	right: 16px;
 }
 .hamberger_container {
+	margin: 0 env(safe-area-inset-left);
 	padding: 11px 16px;
 	height: 100%;
     text-align: right;
@@ -49,7 +50,7 @@ header {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .header_menu ul {
-	margin: 0;
+	margin: env(safe-area-inset-left);
 	list-style: none;
 }
 .header_menu li {
