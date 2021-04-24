@@ -1,3 +1,4 @@
+</div>
 <footer>
 	<div class="site-footer">
 		<div class="site-copyright">

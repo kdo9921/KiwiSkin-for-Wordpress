@@ -13,7 +13,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<div class="container">
     <header class="site-header">
         <a href="/">
             <h1><?php bloginfo('name') ?></h1>

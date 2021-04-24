@@ -1,5 +1,5 @@
 <?php get_header() ; ?>
-<div class="container">
+<div class="content_container">
     <section class="site-content">
         <article>
             <div class="post_content">
