@@ -7,7 +7,9 @@
     <title><?php wp_title('-', true, 'right'); ?></title>
     <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/darkmode.css">
+    <?php if ( get_option('darkmode_support')) : ?>
+        <?php echo "<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/css/darkmode.css\">" ?>
+    <?php endif; ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php wp_head() ; ?>
 </head>
@@ -17,6 +19,9 @@
     <header class="site-header">
         <a href="/">
             <h1><?php bloginfo('name') ?></h1>
+            <?php if ( get_option('display_tagline')) : ?>
+                <p><?php bloginfo('description'); ?> </p>
+            <?php endif; ?>
         </a>
     </header>
     <?php if (has_nav_menu( 'menu1' )) : ?>
@@ -34,6 +39,5 @@
         )
     )
     ?>
-
     </div>
     <?php endif; ?>

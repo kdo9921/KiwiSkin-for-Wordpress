@@ -56,6 +56,21 @@ function mytheme_customize_register( $wp_customize ) {
         'default'     => "#8c5e29",
         'transport'   => 'refresh',
     ) );
+
+    $wp_customize->add_setting('display_tagline', array(
+        'type' => 'option',
+        'default' => true,
+        'priority' => 10,
+        'transport' => 'refresh'
+    ));
+    $wp_customize->add_setting('darkmode_support', array(
+        'type' => 'option',
+        'default' => true,
+        'priority' => 10,
+        'transport' => 'refresh'
+    ));
+
+
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_color', array(
         'label'        => __( 'Main Color', 'mytheme' ),
         'section'    => 'colors',
@@ -72,6 +87,19 @@ function mytheme_customize_register( $wp_customize ) {
         'label'        => __( 'Header Color 2', 'mytheme' ),
         'section'    => 'colors',
     ) ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'display_tagline', array(
+        'label' => 'Display Tagline',
+        'section' => 'title_tagline',
+        'settings' => 'display_tagline',
+        'type' => 'checkbox'
+    )));
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'darkmode_support', array(
+        'label' => 'Darkmode Support',
+        'section' => 'colors',
+        'settings' => 'darkmode_support',
+        'type' => 'checkbox'
+    )));
 }
 add_action( 'customize_register', 'mytheme_customize_register' );
 

@@ -2,7 +2,7 @@
   Theme Name: KiwiSkin
   Author: Kiwi
   Description: Simple blog theme
-  Version: 1.0
+  Version: 1.0.1
 */
 
 html {
@@ -28,6 +28,10 @@ header {
 	align-items: center;
 	justify-content: center;
 	font-size: 150%;
+}
+.site-header h1, .site-header p {
+	margin: 8px;
+	text-align: center;
 }
 #hamberger {
 	right: 16px;
