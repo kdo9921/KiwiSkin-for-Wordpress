@@ -20,7 +20,7 @@ p {
 	line-height: 1.6;
 }
 .container {
-	height: calc(100vh - 112px);
+	min-height: calc(100vh - 112px);
 }
 header {
 	height: 200px;
