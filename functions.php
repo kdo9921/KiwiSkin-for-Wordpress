@@ -107,7 +107,7 @@ function mytheme_customize_css()
 {
     ?>
     <style type="text/css">
-        header { 
+        .header-container { 
             background: linear-gradient(120deg, <?php echo get_theme_mod('header_color_1', "#9ce159"); 
         ?>, <?php echo get_theme_mod('header_color_2', "#8c5e29"); ?>);
         }

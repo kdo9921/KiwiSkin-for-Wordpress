@@ -16,14 +16,16 @@
 
 <body <?php body_class(); ?>>
 <div class="container">
-    <header class="site-header">
-        <a href="/">
-            <h1><?php bloginfo('name') ?></h1>
-            <?php if ( get_option('display_tagline')) : ?>
-                <p><?php bloginfo('description'); ?> </p>
-            <?php endif; ?>
-        </a>
-    </header>
+    <div class="header-container">
+        <header class="site-header">
+            <a href="/">
+                <h1><?php bloginfo('name') ?></h1>
+                <?php if ( get_option('display_tagline')) : ?>
+                    <p><?php bloginfo('description'); ?> </p>
+                <?php endif; ?>
+            </a>
+        </header>
+    </div>
     <?php if (has_nav_menu( 'menu1' )) : ?>
     <div class="header_menu">
         <div class="hamberger_container">
