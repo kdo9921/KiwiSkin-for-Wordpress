@@ -17,14 +17,22 @@
 <body <?php body_class(); ?>>
 <div class="container">
     <div class="header-container">
+        <?php if ( get_option('header_image')) : ?>
+            <?php echo "href=\"/\""?>
+        <?php endif; ?>
         <header class="site-header">
-            <a href="/">
+            <?php if ( get_option('header_image') == false ) : ?>
+                <a href="/">
                 <h1><?php bloginfo('name') ?></h1>
                 <?php if ( get_option('display_tagline')) : ?>
                     <p><?php bloginfo('description'); ?> </p>
                 <?php endif; ?>
-            </a>
+                </a>
+            <?php endif; ?>
         </header>
+        <?php if ( get_option('header_image')) : ?>
+            <?php echo "</a>"?>
+        <?php endif; ?>
     </div>
     <?php if (has_nav_menu( 'menu1' )) : ?>
     <div class="header_menu">

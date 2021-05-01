@@ -69,7 +69,12 @@ function mytheme_customize_register( $wp_customize ) {
         'priority' => 10,
         'transport' => 'refresh'
     ));
-
+    $wp_customize->add_setting('header_image', array(
+        'type' => 'option',
+        'default' => false,
+        'priority' => 10,
+        'transport' => 'refresh'
+    ));
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_color', array(
         'label'        => __( 'Main Color', 'mytheme' ),
@@ -98,6 +103,12 @@ function mytheme_customize_register( $wp_customize ) {
         'label' => 'Darkmode Support',
         'section' => 'colors',
         'settings' => 'darkmode_support',
+        'type' => 'checkbox'
+    )));
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'header_image', array(
+        'label' => 'Header Image',
+        'section' => 'colors',
+        'settings' => 'header_image',
         'type' => 'checkbox'
     )));
 }
