@@ -18,7 +18,7 @@
 <div class="container">
     <div class="header-container">
         <?php if ( get_option('header_image')) : ?>
-            <?php echo "href=\"/\""?>
+            <?php echo "<a href=\"/\">"?>
         <?php endif; ?>
         <header class="site-header">
             <?php if ( get_option('header_image') == false ) : ?>
