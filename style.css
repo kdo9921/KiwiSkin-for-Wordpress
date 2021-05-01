@@ -130,6 +130,7 @@ section {
 
 article {
 	margin: 16px min(4vw, 16px) 32px;
+	word-break: break-all;
 }
 
 .content-wrap {
