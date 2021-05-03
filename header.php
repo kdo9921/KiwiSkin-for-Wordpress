@@ -36,7 +36,7 @@
     </div>
     <?php if (has_nav_menu( 'menu1' )) : ?>
     <div class="header_menu">
-        <div class="hamberger_container">
+        <div class="hamberger_button">
             <a href="javascript:void(0);" id="hamberger" onclick="headerMenuToggle()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -46,6 +46,7 @@
         array(
             'theme_location' => 'menu1',
             'depth' => 0,
+            'container_class' => 'top_menu',
         )
     )
     ?>

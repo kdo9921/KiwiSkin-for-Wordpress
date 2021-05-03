@@ -36,7 +36,7 @@ header {
 #hamberger {
 	right: 16px;
 }
-.hamberger_container {
+.hamberger_button {
 	margin: 0 env(safe-area-inset-left);
 	padding: 11px 16px;
 	height: 100%;
@@ -45,11 +45,11 @@ header {
 	display: block;
 }
 .menu  {
-	display: none;
 	padding: 16px;
 }
-.menuActive {
-	display: block;
+.top_menu {
+	overflow: hidden;
+	transition: max-height 0.5s;
 }
 .header_menu {
 	background-color: #ffffff;
@@ -92,6 +92,14 @@ strong {
 	max-width: 1100px;
 	display: grid;
 }
+@media (max-width : 989px) {
+	.top_menu {
+		max-height: 0;
+	}
+	.show_menu {
+		max-height: 200vh;		
+	}
+}
 
 @media (min-width : 990px) {
 	.header_menu li {
@@ -106,7 +114,7 @@ strong {
 	.content_container {
 		grid-template-columns: 2fr 1fr;
 	}
-	.hamberger_container {
+	.hamberger_button {
 		display: none;
 	}
 	.menu {
