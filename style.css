@@ -49,7 +49,7 @@ header {
 }
 .top_menu {
 	overflow: hidden;
-	transition: max-height 0.5s;
+	transition: max-height 0.5s ease;
 }
 .header_menu {
 	background-color: #ffffff;
@@ -97,7 +97,7 @@ strong {
 		max-height: 0;
 	}
 	.show_menu {
-		max-height: 200vh;		
+		max-height: 320px;		
 	}
 }
 
