@@ -3,8 +3,8 @@
     <section class="site-content">
         <article>
             <div class="post_content">
-                <?php the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+                <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+                <?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
             </div>
         </article>
         <?php if (have_posts()) : while (have_posts()) : the_post() ; ?>
@@ -27,7 +27,7 @@
                 <hr>
                 <p><?php _e( 'Nothing Found Try Again', 'KiwiSkin' ); ?></p>
                 <form role="search" method="get" id="searchform" class="searchform" action="http://localhost/">
-                    <input type="text" placeholder="<?php _e( 'Search Result', 'KiwiSkin' ); ?> …" value="" name="s" id="s">
+                    <input type="text" placeholder="<?php _e( 'Search', 'KiwiSkin' ); ?> …" value="" name="s" id="s">
                 </form>
             </div>
         </article>

@@ -22,7 +22,7 @@
                 <h1><?php _e( 'Nothing Found', 'KiwiSkin' ); ?></h1>
                 <p><?php _e( 'Nothing Found Try Again', 'KiwiSkin' ); ?></p>
                 <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo( 'url' ); ?>">
-                    <input class="search-field" type="text" placeholder="_e( 'Search', 'KiwiSkin' ); …" value="" name="s" id="s">
+                    <input type="text" placeholder="<?php _e( 'Search', 'KiwiSkin' ); ?> …" value="" name="s" id="s">
                 </form>
             </div>
         </article>

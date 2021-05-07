@@ -140,4 +140,8 @@ function l10n_setup() {
     load_theme_textdomain( 'KiwiSkin', get_template_directory() . '/lang' );
 }
 add_action( 'after_setup_theme', 'l10n_setup' );
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+    return str_replace(':',' :',str_replace('[','',str_replace(']','',$title)));
+});
 ?>

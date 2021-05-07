@@ -2,7 +2,7 @@
   Theme Name: KiwiSkin
   Author: Kiwi
   Description: Simple blog theme
-  Version: 1.0.2
+  Version: 1.0.3
 */
 
 html {
@@ -202,13 +202,17 @@ figcaption {
 	padding-bottom: 8px;
 }
 
-.search-field {
+.searchform input {
 	width: calc(100% - 22px);
 	height: 36px;
 	font-size: 16px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding: 2px 10px;
+	margin: 1em 0;
+}
+.searchform #searchsubmit, .searchform .screen-reader-text {
+	display : none;
 }
 
 .nav-links {
