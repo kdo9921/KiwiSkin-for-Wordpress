@@ -4,7 +4,6 @@
 
 워드프레스 블로그 테마입니다.
 
-[demo](https://blog.apteryx.moe)
 
 ## 할것
 - [x] 기본적인 테마 제작
