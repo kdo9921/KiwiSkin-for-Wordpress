@@ -137,12 +137,12 @@ section {
 }
 
 article {
-	margin: 16px min(4vw, 16px) 32px;
+	margin: 16px min(2vw, 12px) 32px;
 	word-break: break-all;
 }
 
 .content-wrap {
-	padding: min(4vw, 24px);
+	padding: min(3vw, 18px);
 }
 
 article img {
