@@ -183,8 +183,8 @@ figcaption {
 }
 
 .site-sidebar {
-	margin: 16px min(4vw, 16px);
-	padding: min(4vw, 24px);
+	margin: 16px min(2vw, 12px);
+	padding: min(3vw, 18px);
 }
 
 .site-sidebar ul {
