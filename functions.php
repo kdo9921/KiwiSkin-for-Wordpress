@@ -14,20 +14,6 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-function getBrowser() {
-    $broswerList = array('MSIE', 'Chrome', 'Firefox', 'iPhone', 'iPad', 'Android', 'PPC', 'Safari', 'Trident', 'none');
-    $browserName = 'none';
-    
-    foreach ($broswerList as $userBrowser){
-        if($userBrowser === 'none') break;
-        if(strpos($_SERVER['HTTP_USER_AGENT'], $userBrowser)) {
-            $browserName = $userBrowser;
-            break;
-        }
-    }
-    return $browserName;
-}
-
 function triki_register_menus() {
     register_nav_menus(
         array(
@@ -36,8 +22,6 @@ function triki_register_menus() {
     );
 };
 add_action('init', 'triki_register_menus');
-
-
 
 function mytheme_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'main_color' , array(
