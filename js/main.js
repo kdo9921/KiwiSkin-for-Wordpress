@@ -6,6 +6,7 @@ function headerMenuToggle() {
 window.onload = function(){
     console.log("KiwiSkin Theme by Kiwi");
     console.log("https://github.com/kdo9921/KiwiSkin-for-Wordpress");
+    sidebarSticky();
 }
 
 function sidebarSticky() {
@@ -23,8 +24,4 @@ function sidebarSticky() {
     `;
     var style_div = document.getElementById('sidebar_style');
     style_div.innerHTML = style;
-}
-
-window.onresize = function() {
-    sidebarSticky();
 }
