@@ -52,6 +52,8 @@ header {
 	transition: max-height 0.5s ease;
 }
 .header_menu {
+	position: sticky;
+	top: 0;
 	background-color: #ffffff;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }

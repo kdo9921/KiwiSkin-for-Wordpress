@@ -17,7 +17,7 @@ function sidebarSticky() {
     @media (min-height : ${height}px) {
 	    .site-sidebar {
 			position: sticky;
-			top: 16px;
+			top: 66px;
 		}
 	}
     </style>
