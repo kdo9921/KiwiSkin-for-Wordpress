@@ -54,6 +54,7 @@ header {
 .header_menu {
 	position: sticky;
 	top: 0;
+	z-index: 5;
 	background-color: #ffffff;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -185,6 +186,7 @@ figcaption {
 }
 
 .site-sidebar {
+	z-index: 1;
 	margin: 16px min(2vw, 12px);
 	padding: min(3vw, 18px);
 }
