@@ -123,6 +123,10 @@ strong {
 	.menu {
 		display: block;
 	}
+	.header_menu ul {
+		max-width: 1076px;
+		margin: auto;
+	}
 
 	.header_menu li:after{
 		content: " / ";
