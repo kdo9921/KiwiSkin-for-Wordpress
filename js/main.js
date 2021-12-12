@@ -11,7 +11,7 @@ window.onload = function(){
 
 function sidebarSticky() {
     var sidebar = document.getElementsByClassName('site-sidebar')[0];
-    var height = sidebar.offsetHeight + 48;
+    var height = sidebar.offsetHeight + 98;
     var style = `
     <style>
     @media (min-height : ${height}px) {
