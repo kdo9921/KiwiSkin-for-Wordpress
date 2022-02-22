@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-16 04:48+0900\n"
-"PO-Revision-Date: 2022-02-22 18:01+0900\n"
+"PO-Revision-Date: 2022-02-22 19:23+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -61,22 +61,30 @@ msgstr[0] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:60
+#: functions.php:64
 msgid "Main Color"
 msgstr "主色"
 
-#: functions.php:64
+#: functions.php:68
 msgid "Sub Color"
 msgstr "二次色"
 
-#: functions.php:68
+#: functions.php:72
 msgid "Header Color 1"
 msgstr "ヘッダーの色 1"
 
-#: functions.php:72
+#: functions.php:76
 msgid "Header Color 2"
 msgstr "ヘッダーの色 2"
 
 #: sidebar.php:4
 msgid "Search"
 msgstr "検索"
+
+#: functions.php:140
+msgid "Newer posts"
+msgstr "Newer posts"
+
+#: functions.php:144
+msgid "Older posts"
+msgstr "Older posts"

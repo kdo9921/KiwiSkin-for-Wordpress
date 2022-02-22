@@ -61,19 +61,19 @@ function mytheme_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_color', array(
-        'label'        => __( 'Main Color', 'mytheme' ),
+        'label'        => __( 'Main Color', 'KiwiSkin' ),
         'section'    => 'colors',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'sub_color', array(
-        'label'        => __( 'Sub Color', 'mytheme' ),
+        'label'        => __( 'Sub Color', 'KiwiSkin' ),
         'section'    => 'colors',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color_1', array(
-        'label'        => __( 'Header Color 1', 'mytheme' ),
+        'label'        => __( 'Header Color 1', 'KiwiSkin' ),
         'section'    => 'colors',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color_2', array(
-        'label'        => __( 'Header Color 2', 'mytheme' ),
+        'label'        => __( 'Header Color 2', 'KiwiSkin' ),
         'section'    => 'colors',
     ) ) );
 
@@ -128,4 +128,25 @@ add_action( 'after_setup_theme', 'l10n_setup' );
 add_filter( 'get_the_archive_title', function ( $title ) {
     return str_replace(':',' :',str_replace('[','',str_replace(']','',$title)));
 });
+
+
+if ( ! function_exists( 'kiwiskin_the_posts_navigation' ) ) :
+	function kiwiskin_the_posts_navigation() {
+		the_posts_pagination(
+			array(
+				'mid_size'  => 2,
+				'prev_text' => sprintf(
+					'<span class="nav-prev-text">%s</span>',
+					__( 'Newer posts', 'KiwiSkin' )
+				),
+				'next_text' => sprintf(
+					'<span class="nav-next-text">%s</span>',
+					__( 'Older posts', 'KiwiSkin' )
+				),
+			)
+		);
+	}
+endif;
+
 ?>
+

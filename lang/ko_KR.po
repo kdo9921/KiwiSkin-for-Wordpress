@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-16 04:48+0900\n"
-"PO-Revision-Date: 2022-02-22 18:01+0900\n"
+"PO-Revision-Date: 2022-02-22 19:23+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -61,22 +61,30 @@ msgstr[0] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:60
+#: functions.php:64
 msgid "Main Color"
 msgstr "주 색상"
 
-#: functions.php:64
+#: functions.php:68
 msgid "Sub Color"
 msgstr "보조 색상"
 
-#: functions.php:68
+#: functions.php:72
 msgid "Header Color 1"
 msgstr "헤더 색상 1"
 
-#: functions.php:72
+#: functions.php:76
 msgid "Header Color 2"
 msgstr "해더 색상 2"
 
 #: sidebar.php:4
 msgid "Search"
 msgstr "검색"
+
+#: functions.php:140
+msgid "Newer posts"
+msgstr "최근 글"
+
+#: functions.php:144
+msgid "Older posts"
+msgstr "이전 글"
