@@ -224,7 +224,19 @@ figcaption {
 }
 
 .nav-links {
-	margin: 36px 16px;
+	margin: 36px 12px;
+}
+
+nav a.page-numbers:not(.prev,.next) {
+    background: none;
+    box-shadow: none;
+    padding: 8px;
+}
+.page-numbers.current {
+    background-color: #ffffff;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	padding: 8px;
+    border-radius: 12px;
 }
 
 .posts-navigation h2 {

@@ -21,7 +21,8 @@
 	.site-sidebar,
 	.nav-links a,
 	footer,
-	.header_menu {
+	.header_menu,
+	.page-numbers.current {
 		background-color: #202020;
 	}
 
