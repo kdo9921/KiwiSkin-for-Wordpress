@@ -32,7 +32,7 @@
             </div>
         </article>
         <?php endif;?>
-        <?php the_posts_navigation() ?>
+        <?php the_posts_pagination(); ?>
     </section>
     <?php get_sidebar(); ?>
 </div>

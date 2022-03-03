@@ -14,7 +14,7 @@
             </article>
         </a>
         <?php endwhile; endif; ?>
-        <?php kiwiskin_the_posts_navigation()() ?>
+        <?php the_posts_pagination(); ?>
     </section>
     <?php get_sidebar(); ?>
 </div>

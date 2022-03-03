@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-16 04:48+0900\n"
-"PO-Revision-Date: 2022-02-22 19:23+0900\n"
+"PO-Revision-Date: 2022-03-04 00:15+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -80,11 +80,3 @@ msgstr "ヘッダーの色 2"
 #: sidebar.php:4
 msgid "Search"
 msgstr "検索"
-
-#: functions.php:140
-msgid "Newer posts"
-msgstr "Newer posts"
-
-#: functions.php:144
-msgid "Older posts"
-msgstr "Older posts"
